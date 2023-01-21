@@ -8,4 +8,4 @@ Ideana on luoda sovellus, missä käyttäjä voi keskustella muiden käyttäjien
 - Aloittaa keskustelun
 - Vastata/kommentoida keskusteluun
 - Poistaa keskustelun
-- Hakea keskusteluista
+- Hakea keskusteluita
