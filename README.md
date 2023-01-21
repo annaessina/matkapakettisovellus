@@ -1,11 +1,12 @@
-# Keskustelupalstasovellus
+# Matkapakettisovellus
 
-Ideana on luoda sovellus, missä käyttäjä voi keskustella muiden käyttäjien kanssa.
+Ideana on luoda sovellus, missä käyttäjä voi ostaa itselleen matkapaketin.
 
-## Käyttäjä voi:
+## Toiminnot ovat:
 
-- Kirjautua sisään ja ulos tai luoda täysin uuden tunnuksen
-- Aloittaa keskustelun
-- Vastata/kommentoida keskusteluun
-- Poistaa keskustelun
-- Hakea keskusteluita
+- Käyttäjä voi kirjautua sisään ja ulos tai luoda täysin uuden tunnuksen
+- Käyttäjä voi valita itselleen matkapaketin tai pelkästään lennon tai hotellin
+- Käyttäjä voi arvioida itse matkakohteita ja lukea muiden arviointeja
+- Matkakohteista on lyhyet kuvaukset ja kuinka monta tähteä kukin kohde on saanut
+- Voi hakea hausta matkakohteita 
+- Matkakohteet on listattu paremmuusjärjestyksessä eli tähtien mukaan
