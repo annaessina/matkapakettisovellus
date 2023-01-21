@@ -10,3 +10,4 @@ Ideana on luoda sovellus, missä käyttäjä voi ostaa itselleen matkapaketin.
 - Matkakohteista on lyhyet kuvaukset ja kuinka monta tähteä kukin kohde on saanut
 - Voi hakea hausta matkakohteita 
 - Matkakohteet on listattu paremmuusjärjestyksessä eli tähtien mukaan
+- Kun käyttäjä valitsee matkakohteen, hänelle ehdotetaan mahdollista matkapakettia
