@@ -1,3 +1,2 @@
-__pycache__
-.env
-venv
+from flask import Flask
+
