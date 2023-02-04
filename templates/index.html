@@ -1,5 +1,70 @@
-<title>Etusivu</title>
-<h1>Etusivu</h1>
-<b>Tervetuloa</b> <i>sovellukseen</i>!
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Online shop</title>
+{% endblock %}
+
+{% block body %}
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-7 fw-normal">Welcome to online shop of Travel Tour Company!</h1>
+    <p class="fs-5 text-muted">Here you may purchase tour packagies currently available.</p>
+  </div>
+</header>
+
+<main>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Stockholm</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">300 euro</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Description/Picture</li>
+            <li>3 days</li>
+            <li>Hotel&Breakfast</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Order Tour</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Prague</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">500 euro</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Description/Picture</li>
+            <li>5 days</li>
+            <li>Hotel&Breakfast</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Order Tour</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">London</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">700 euro</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Description/Picture</li>
+            <li>5 days</li>
+            <li>Hotel&Breakfast</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Order Tour</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+{% endblock %}
 
 
