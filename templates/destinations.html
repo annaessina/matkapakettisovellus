@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Destinations list</title>
+{% endblock %}
+
+{% block body %}
+<div class = "container">
+    <h1>Destinations list</h1>
+</div>
+
+Destination number: {{ count }}
+<hr>
+{% for des in destinations %}
+{{ des.destination }}
+<hr>
+{% endfor %}
+
+
+{% endblock %}
