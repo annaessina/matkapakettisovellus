@@ -18,9 +18,9 @@ Ideana on luoda sovellus, missä käyttäjä voi ostaa itselleen matkapaketin.
 
 # Käynnistysohjeet
 
-1. Kloonaa tämä repositorio koneellesi ja siirry sen juurikansioon.   
+1. Aluksi kloonaa tämä repositorio koneellesi ja siirry sen juurikansioon.   
 
-2. Luo .env-tiedosto, jonka sisältö on seuraavanlainen:
+2. Luo .env-tiedosto ja määritä  sisältö on seuraavanlaiseksi:
 
 > DATABASE_URL=\<tietokannan-paikallinen-osoite>   
 > SECRET_KEY=\<salainen-avain>
@@ -35,7 +35,7 @@ Ideana on luoda sovellus, missä käyttäjä voi ostaa itselleen matkapaketin.
 
 `$ psql < schema.sql`
 
-5. Nyt sovellus käynnistyy komennolla
+5. Sovellus käynnistyy komennolla
 
 `$ flask run`
 
