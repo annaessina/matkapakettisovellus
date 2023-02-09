@@ -10,3 +10,9 @@ CREATE TABLE  users (
     username TEXT,
     password TEXT,
 );
+
+CREATE TABLE orders (
+     id SERIAL PRIMARY KEY,
+     order TEXT,
+     date  INTEGER,
+);
