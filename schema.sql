@@ -4,3 +4,9 @@ CREATE TABLE destinations (
      price INTEGER,
      duration INTEGER
 );
+
+CREATE TABLE  users (
+    id SERIAL PRIMARY KEY,
+    username TEXT,
+    password TEXT,
+);
