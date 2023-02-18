@@ -1,18 +1,14 @@
-CREATE TABLE destinations (
-     id SERIAL PRIMARY KEY,
-     destination TEXT,
-     price INTEGER,
-     duration INTEGER,
+CREATE TABLE destinations(
+    id SERIAL PRIMARY KEY,
+    destination TEXT,
+    price TEXT
+    duration TEXT,
 );
 
-CREATE TABLE  users (
+
+CREATE TABLE users(
     id SERIAL PRIMARY KEY,
     username TEXT,
-    password TEXT,
+    password TEXT
 );
 
-CREATE TABLE orders (
-     id SERIAL PRIMARY KEY,
-     order TEXT,
-     date  INTEGER,
-);
