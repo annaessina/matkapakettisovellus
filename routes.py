@@ -21,8 +21,8 @@ def about():
 
 @app.route('/destinations')
 def destinations():
-        return render_template('destinations.html')
+#        return render_template('destinations.html')
 #       result = db.session.execute("SELECT destination FROM destinations")
 #       destinations = result.fetchall()
-#        return render_template("destinations.html", count=len(destinations) destinations=destinations)
+        return render_template("destinations.html", count=len(destinations), destinations=destinations)
 #        return render_template("destinations.html")
