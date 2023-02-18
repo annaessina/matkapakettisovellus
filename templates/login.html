@@ -12,6 +12,9 @@
 </div>
 
 <h2>Login</h2>
+
+<p>If you already have username and password, type it in:</p>
+
 <form action="/login" method="POST">
 Username: <br><input type="text" name="username">
 <p>
@@ -20,8 +23,6 @@ Password: <br><input type="password" name="password">
 <input type="submit" value="Login">
 </form>
 <p>
-Do not have an account?
-<p>
-Sign up as a <a href="/register_normal_user">user</a> 
+If you do not have an account, register as a <a href="/register_normal_user.html">new user</a>
 <p>
 {% endblock %}
