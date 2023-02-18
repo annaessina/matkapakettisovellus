@@ -1,20 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}
-<title>Log in page</title>
+<title>About shop</title>
 {% endblock %}
 
 {% block body %}
 
-<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-7 fw-normal">Welcome to Log in page of Travel Tour Company!</h1>
-        <p class="fs-5 text-muted">Here you may log in to our main page or create new account.</p>
-</div>
-
 <h2>Login</h2>
-
-<p>If you already have username and password, type it in:</p>
-
 <form action="/login" method="POST">
 Username: <br><input type="text" name="username">
 <p>
@@ -23,6 +15,9 @@ Password: <br><input type="password" name="password">
 <input type="submit" value="Login">
 </form>
 <p>
-If you do not have an account, register as a <a href="/register_normal_user">new user</a>
+Do not have an account?
 <p>
+Sign up as a <a href="/register_normal_user">user</a>
+<p>
+
 {% endblock %}
