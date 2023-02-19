@@ -4,7 +4,6 @@ CREATE TABLE users(
     password TEXT
 );
 
-
 CREATE TABLE destinations(
     id SERIAL PRIMARY KEY,
     destination TEXT,
