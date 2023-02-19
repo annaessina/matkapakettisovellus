@@ -78,3 +78,20 @@ def destinations():
 def profile():
     return render_template('profile.html')
 
+
+@app.route("/order", methods=['GET', 'POST'])
+def order():
+    if request.method == 'POST':
+        if request.form.get('action1') == 'Order':
+            return render_template('order.html', city = 'Stockholm')
+        elif request.form.get('action2') == 'Order':
+            return render_template('order.html', city = 'Prague')
+        elif request.form.get('action3') == 'Order':
+            return render_template('order.html', city = 'London')
+
+
+
+    elif request.method == 'GET':
+        return render_template('index2.html', form=form)
+
+    return render_template("index2.html")
