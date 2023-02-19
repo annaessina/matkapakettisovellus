@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Error page</title>
+{% endblock %}
+
+{% block body %}
+
+<div>
+<nav>
+<a href="http://127.0.0.1:5000/">Back</a>
+</nav>
+
+<p>
+Error: {{ message }}
+</p>
+</div>
+
+{% endblock %}
