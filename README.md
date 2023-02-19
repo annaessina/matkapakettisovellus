@@ -11,7 +11,7 @@ Ideana on luoda sovellus, missä käyttäjä voi ostaa itselleen matkapaketin.
 - Käyttäjä voi arvioida itse matkakohteita ja lukea muiden arviointeja
 - Matkakohteista on lyhyet kuvaukset (tehty)
 - Matkakohteet on listattu paremmuusjärjestyksessä eli tähtien mukaan
-- Kun käyttäjä valitsee matkakohteen, hän näkee oman tilauksen
+- Kun käyttäjä valitsee matkakohteen, hän näkee oman tilauksen (tehty)
 
 
 # Käynnistysohjeet
