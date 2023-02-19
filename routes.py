@@ -42,7 +42,9 @@ def register_normal_user():
         if any(char.isdigit() for char in password1) == False:
             return render_template("error.html", message="Password must contain numbers")
 
-        if not users.register(username, password1, False):
+        if users.register(username, password):
+            return redirect("/profile")
+        else:
             return render_template("error.html", message="Registration failed")
 
         return redirect("/home_page")
