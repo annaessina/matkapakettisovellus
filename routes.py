@@ -40,10 +40,10 @@ def register_normal_user():
             return render_template("error.html", message="Password must be at least 4 characters")
 
         if any(char.isdigit() for char in password1) == False:
-            return render_template("error.html", message="Password must contain numbers")
+            return render_template("error.html", message="Password must contain digits")
 
-        if users.register(username, password):
-            return redirect("/profile")
+        if users.register(username, password1):
+            return redirect("/index2")
         else:
             return render_template("error.html", message="Registration failed")
 
@@ -73,3 +73,8 @@ def about():
 @app.route('/destinations')
 def destinations():
     return render_template('destinations.html')
+
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
+
