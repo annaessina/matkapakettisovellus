@@ -1,3 +1,10 @@
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    username TEXT,
+    password TEXT
+);
+
+
 CREATE TABLE destinations(
     id SERIAL PRIMARY KEY,
     destination TEXT,
@@ -5,10 +12,20 @@ CREATE TABLE destinations(
     duration TEXT,
 );
 
-
-CREATE TABLE users(
-    id SERIAL PRIMARY KEY,
+CREATE TABLE comments(
     username TEXT,
-    password TEXT
+    comment TEXT,
+    posted TIMESTAMP
 );
 
+CREATE TABLE ratings(
+    username TEXT,
+    rating INTEGER,
+    posted TIMESTAMP
+);
+
+CREATE TABLE orders(
+    id SERIAL PRIMARY KEY,
+    username TEXT,
+    destination TEXT
+);
