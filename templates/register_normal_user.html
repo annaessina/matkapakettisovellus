@@ -8,6 +8,9 @@
 {% block body %}
 
 <h2>Register as a new user</h2>
+
+<p>Username must be between 1 and 15 characters, password must be 4 or more characters and has to include digits.</p>
+
 <form action="/register_normal_user" method="POST">
 Username: <br><input type="text" name="username">
 <p>
