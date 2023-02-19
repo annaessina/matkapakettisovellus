@@ -17,6 +17,7 @@ def login():
         password = request.form["password"]
         if users.login(username, password):
             return redirect("/home_page")
+       
         return render_template("error.html", message = "Wrong username or password")
 
 @app.route("/register_normal_user", methods=["GET", "POST"])
