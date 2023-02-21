@@ -8,7 +8,7 @@ CREATE TABLE destinations(
     id SERIAL PRIMARY KEY,
     destination TEXT,
     price TEXT
-    duration TEXT,
+    duration TEXT
 );
 
 CREATE TABLE comments(
