@@ -1,10 +1,23 @@
 import os
 from db import db
-from flask import session
+from flask import session, request, abort
 from sqlalchemy.sql import text
 from werkzeug.security import check_password_hash, generate_password_hash
 
 def login(username, password):
+    sql = "SELECT id, password FROM users WHERE username=:username"
+    result = db.session.execute(sql, {"username":username})
+    user = result.fetchone()
+    if not user:
+        return False
+    else:
+        if check_password_hash(user.password, password):
+            session["user_id"] = user.id
+            return True
+        else:
+            return False
+
+'''def login(username, password):
     sql = text("SELECT id, password FROM users WHERE username=:username")
     result = db.session.execute(sql, {"username":username})
     user = result.fetchone()
@@ -17,8 +30,26 @@ def login(username, password):
         session["user_id"] = user[1]
         session["user_name"] = username
         session["csrf_token"] = os.urandom(16).hex()
-        return True
+        return True'''
 
+
+def logout():
+    del session["user_id"]
+
+def register(username, password):
+    hash_value = generate_password_hash(password)
+    try:
+        sql = "INSERT INTO users (username,password) VALUES (:username,:password)"
+        db.session.execute(sql, {"username":username, "password":hash_value})
+        db.session.commit()
+    except:
+        return False
+    return login(username, password)
+
+def user_id():
+    return session.get("user_id",0)
+
+'''
 def register(username,password):
     hash_value = generate_password_hash(password)
     try:
@@ -34,3 +65,4 @@ def register(username,password):
 def logout():
     del session["user_id"]
     del session["user_name"]
+'''
