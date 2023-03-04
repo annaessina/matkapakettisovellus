@@ -20,6 +20,27 @@ def login():
        
         return render_template("error.html", message = "Wrong username or password")
 
+@app.route("/logout")
+def logout():
+    users.logout()
+    return redirect("/home_page")
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "GET":
+        return render_template("register.html")
+    if request.method == "POST":
+        username = request.form["username"]
+        password1 = request.form["password1"]
+        password2 = request.form["password2"]
+        if password1 != password2:
+            return render_template("error.html", message="Salasanat eroavat")
+        if users.register(username, password1):
+            return redirect("/home_page")
+        else:
+            return render_template("error.html", message="Rekisteröinti ei onnistunut")
+
+'''
 @app.route("/register_normal_user", methods=["GET", "POST"])
 def register_normal_user():
     if request.method == "GET":
@@ -57,6 +78,7 @@ def logout():
     users.logout()
     return redirect("/")
 
+'''
 @app.route("/home_page", methods=["GET", "POST"])
 def home_page():
     return render_template("home_page.html")
