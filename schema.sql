@@ -12,12 +12,14 @@ CREATE TABLE destinations(
 );
 
 CREATE TABLE comments(
+    id SERIAL PRIMARY KEY,
     username TEXT,
     comment TEXT,
     posted TIMESTAMP
 );
 
 CREATE TABLE ratings(
+    id SERIAL PRIMARY KEY,
     username TEXT,
     rating INTEGER,
     posted TIMESTAMP
@@ -28,3 +30,4 @@ CREATE TABLE orders(
     username TEXT,
     destination TEXT
 );
+
