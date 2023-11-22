@@ -4,14 +4,14 @@ Ideana on luoda sovellus, missä käyttäjä voi ostaa itselleen matkapaketin.
 
 ## Toiminnot ovat:
 
-- Käyttäjä voi kirjautua sisään (tehty) tai luoda uuden tunnuksen (tehty)
-- Käyttäjä voi kirjautua ulos (tehty)
-- Käyttäjä voi valita itselleen matkapaketin ja tarkastella kuvia kohteesta (tehty)
-- Käyttäjä pystyy näkemään tietoja yrityksestä (tehty)
+- Käyttäjä voi kirjautua sisään tai luoda uuden tunnuksen
+- Käyttäjä voi kirjautua ulos 
+- Käyttäjä voi valita itselleen matkapaketin ja tarkastella kuvia kohteesta 
+- Käyttäjä pystyy näkemään tietoja yrityksestä 
 - Käyttäjä voi arvioida itse matkakohteita ja lukea muiden arviointeja
-- Matkakohteista on lyhyet kuvaukset (tehty)
+- Matkakohteista on lyhyet kuvaukset 
 - Matkakohteet on listattu paremmuusjärjestyksessä eli tähtien mukaan
-- Kun käyttäjä valitsee matkakohteen, hän näkee oman tilauksen (tehty)
+- Kun käyttäjä valitsee matkakohteen, hän näkee oman tilauksen 
 
 
 # Käynnistysohjeet
